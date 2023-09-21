@@ -1,0 +1,13 @@
+django
+djangorestframework
+requests
+pytz
+pymongo
+gunicorn
+uvicorn
+celery~=5.2.7
+django-celery-results
+django-celery-beat
+redis~=4.3.4
+numpy
+fastapi

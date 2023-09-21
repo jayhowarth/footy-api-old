@@ -1,0 +1,12 @@
+Over 1.5
+last 5 over 1.5 >= 4    =   5
+last 10 over 1.5 >= 8   =   5
+home/away last 5 over 1.5 >= 4  = 5
+last 5 over 2.5 >= 3    =   10
+diff between positions if over 5 played = > 1/2 team in league  =   10
+nil draws >= 1  =   -5      >= 2   =   -10
+prev meetings over 1.5 >= 4     =   5
+Goals scored avg => 1.5 = 5    => 2   10   =>3     20   => 4    25
+Goals conceded avg => 1.5 = 5    => 2   10   =>3     20     => 4   25
+Goal difference >= 10   =   5   >= 20   =   10
+Total 90

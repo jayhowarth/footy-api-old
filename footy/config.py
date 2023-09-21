@@ -1,0 +1,1 @@
+live_scores_auth = "key=GMz0kbgRqvX8HwaQ&secret=1eGkMOnW16xkdUGUHfV1rbTRHR0pnbgp"

@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: amqp
+  name: amqp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: amqp
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.26.0 (40646f47)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: amqp
+    spec:
+      containers:
+        - image: rabbitmq:3.10-management
+          name: amqp
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+          resources: {}
+          volumeMounts:
+            - mountPath: /etc/rabbitmq/rabbitmq.conf
+              name: amqp-claim0
+      restartPolicy: Always
+      volumes:
+        - name: amqp-claim0
+          persistentVolumeClaim:
+            claimName: amqp-claim0
+status: {}

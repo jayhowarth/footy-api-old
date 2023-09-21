@@ -1,0 +1,37 @@
+version: "3.3"
+
+services:
+  amqp:
+    image: rabbitmq:3.10-management
+    container_name: amqp
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - /Users/jayhowarth/Projects/footy/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - 6379:6379
+
+#  footy:
+#    image: footy
+#    container_name: footy
+#    build: .
+#    ports:
+#      - 8000:8000
+#    depends_on:
+#      - amqp
+#
+#  worker:
+#    image: worker
+#    container_name: worker
+#    build:
+#      context: .
+#      dockerfile: DockerfileCelery
+
+
+
+

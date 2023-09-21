@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.26.0 (40646f47)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: footy
+  name: footy
+spec:
+  ports:
+    - name: "8001"
+      port: 8001
+      targetPort: 8000
+  selector:
+    io.kompose.service: footy
+  type: LoadBalancer
+status:
+  loadBalancer: {}

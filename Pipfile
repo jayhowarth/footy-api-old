@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "~=4.0.3"
+djangorestframework = "~=3.13.1"
+requests = "~=2.27.1"
+pytz = "~=2022.1"
+snappy = "*"
+pymongo = "~=4.1.0"
+psycopg2 = "*"
+srv = "*"
+gssapi = "*"
+dnspython = "*"
+virtualenvwrapper = "*"
+pymemcache = "~=3.5.2"
+django-pymemcache = "*"
+pandas = "*"
+numpy = "*"
+djongo = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
